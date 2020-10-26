@@ -28,6 +28,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:***  UC_1_2
@@ -43,6 +45,8 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -60,6 +64,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_1_4
@@ -75,6 +81,8 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -92,6 +100,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:***  UC_3
@@ -107,6 +117,8 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -124,6 +136,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_5
@@ -140,6 +154,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_6
@@ -155,6 +171,8 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -174,6 +192,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_8
@@ -189,6 +209,8 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:*** Відсутні.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -209,6 +231,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_9_2
@@ -227,6 +251,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_9_3
@@ -244,6 +270,8 @@
 •	EX.009.3.001. Датасет із вказаною назвою не знайдений.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -264,6 +292,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_10_2
@@ -282,6 +312,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_10_3
@@ -299,6 +331,8 @@
 •	EX.010.3.001. Сутність із вказаною назвою не знайдена.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -319,6 +353,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_11_2
@@ -337,6 +373,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_11_3
@@ -354,6 +392,8 @@
 •	EX.011.3.001. Концепція із вказаною назвою не знайдена.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -374,6 +414,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_12_2
@@ -387,6 +429,8 @@
 ***РЕЗУЛЬТАТ:*** Зміни в датапоінті.
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -406,6 +450,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_13_1
@@ -423,6 +469,8 @@
 •	EX.013.1.001. Користувач вже має права модератора.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -442,6 +490,8 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+
 <hr>
 
 ***ID:*** UC_14
@@ -459,3 +509,5 @@
 •	EX.014.001. Користувач не задав параметри пошуку.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
