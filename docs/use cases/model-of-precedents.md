@@ -28,7 +28,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/U_1_1.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/U_1_1.png "></a>
 
 <hr>
 
