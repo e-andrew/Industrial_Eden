@@ -9,6 +9,6 @@
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_10.png " height="400" width="800" ></a>
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_11.png " height="400" width="800" ></a>
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_12.png " height="400" width="800" ></a>
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="600" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
 
 # Cпецифікації прецедентів
