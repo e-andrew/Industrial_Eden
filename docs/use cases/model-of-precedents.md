@@ -2,7 +2,7 @@
 * [Industrial Eden. Аналіз предметної області](https://github.com/e-andrew/Industrial_Eden/blob/master/docs/requirements/state-of-the-art.md)
 * [Industrial Eden. Запити зацікавлених осіб](https://github.com/e-andrew/Industrial_Eden/blob/master/docs/requirements/stakeholders-needs.md)
 # Загальні оглядові діаграми
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/GEN_UC.png" height="300" width="500" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/GEN_UC.png" height="600" width="1000" ></a>
 
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_1.png" height="400" width="800" ></a>
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_9.png" height="400" width="800" ></a>
@@ -28,7 +28,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_1_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -46,7 +46,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_1_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -64,7 +64,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_1_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -82,7 +82,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_1_4.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -100,7 +100,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -118,7 +118,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -136,7 +136,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_4.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -154,7 +154,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_5.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -172,7 +172,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_6.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -192,7 +192,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_7.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -210,7 +210,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_8.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -231,7 +231,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_9_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -251,7 +251,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_9_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -271,7 +271,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_9_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -292,7 +292,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_10_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -312,7 +312,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_10_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -332,7 +332,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_10_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -353,7 +353,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_11_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -373,7 +373,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_11_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -393,7 +393,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_11_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -414,7 +414,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_12_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -430,7 +430,7 @@
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_12_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -450,7 +450,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_12_3.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -470,7 +470,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_13_1.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -490,7 +490,7 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_13_2.png " height="400" width="400" ></a>
 
 <hr>
 
@@ -510,4 +510,4 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_13.png " height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/UC_14.png " height="400" width="400" ></a>
