@@ -4,4 +4,15 @@
 # Загальні оглядові діаграми
 <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/GEN_UC.png" height="600" width="1000" ></a>
 
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_1.png" height="600" width="1000" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/PUC_9.png" height="600" width="1000" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/
+PUC_10.png " height="600" width="1000" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/
+PUC_11.png " height="600" width="1000" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/
+PUC_12.png " height="600" width="1000" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/master/docs/use%20cases/graphics/
+PUC_13.png " height="600" width="1000" ></a>
+
 # Cпецифікації прецедентів
