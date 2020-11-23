@@ -19,7 +19,7 @@ entity Review.creationdate
 entity Review.text
 entity Review.topic
  Review.creationdate -u-* Review
- Review.text --* Review
+ Review.text -r-* Review
  Review.topic -d-* Review
 
 entity User
@@ -33,23 +33,23 @@ entity WorkStatistics
  WorkStatistics "1,1" -u- "1,1" Admin : Viewer
 
 entity CollectionOfData
-entity CollectionOfData.name
-entity CollectionOfData.description
-entity CollectionOfData.creationdate
-entity CollectionOfData.modificationdate
+entity COD.name
+entity COD.description
+entity COD.creationdate
+entity COD.modificationdate
 entity Dataset
 entity Datapoint
 entity Entity
 entity Conception
  
- Dataset  --|> CollectionOfData
- Datapoint  -l-|> CollectionOfData
+ Dataset  -u-|> CollectionOfData
+ Datapoint  -u-|> CollectionOfData
  Entity  -u-|> CollectionOfData
- Conception  -d-|> CollectionOfData
- CollectionOfData.name -u-* CollectionOfData
- CollectionOfData.description -u-* CollectionOfData
- CollectionOfData.creationdate -u-* CollectionOfData
- CollectionOfData.modificationdate -u-* CollectionOfData
+ Conception  -u-|> CollectionOfData
+ COD.name -d-* CollectionOfData
+ COD.description -d-* CollectionOfData
+ COD.creationdate -d-* CollectionOfData
+ COD.modificationdate -d-* CollectionOfData
 
 entity Request
 entity DeleteRequest
