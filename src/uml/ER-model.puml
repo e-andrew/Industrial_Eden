@@ -1,0 +1,94 @@
+@startuml
+
+  entity Account <<ENTITY>> {
+    email:TEXT
+    nickname:TEXT
+    password:TEXT
+    confirmation:BOOLEAN
+    permissions:ENUM
+  }
+  
+  entity Review <<ENTITY>>{
+    topic:TEXT
+    text:TEXT
+    creationdate:DATE
+  }
+  
+  entity User <<ENTITY>>{
+  }
+  
+  entity Admin <<ENTITY>>{
+  }
+  
+  entity WorkStatistics <<ENTITY>>{
+  }
+
+  entity Guest <<ENTITY>> {
+  }
+  
+  entity Moderator <<ENTITY>> {
+  }
+  
+  entity Guest <<ENTITY>> {
+  }
+  
+  entity Request <<ENTITY>> {
+  }
+
+  entity DeleteRequest <<ENTITY>> {
+  }
+  
+  entity CreateRequest <<ENTITY>> {
+  }
+  
+  entity ReadRequest <<ENTITY>> {
+  }
+  
+  entity UpdateRequest <<ENTITY>> {
+  }
+  
+  entity CollectionOfData <<ENTITY>> {
+      name:TEXT
+      description:TEXT
+      creationdate:DATE
+      modificationdate:DATE
+  }
+  
+  entity Dataset <<ENTITY>> {
+  }
+  
+  entity Conception <<ENTITY>> {
+  }
+  
+  entity Datapoint <<ENTITY>> {
+  }
+  
+  entity Entity <<ENTITY>> {
+  }
+   
+  Guest -u-|> User
+    Moderator -u-|> User
+    
+    Admin -u-|> User
+    WorkStatistics "1,1" -u- "1,1" Admin : Viewer
+    
+    User "1,1" -l- "0,*" Review : Author
+
+  User "0,*" -u- "1,1" Account : Owner
+  verificationRequest "1,*" -l- "1,1" Account
+ 
+    User "1,1" -r- "0,*" Request
+        
+    DeleteRequest --|> Request
+    CreateRequest --|> Request
+    ReadRequest -u-|> Request
+    UpdateRequest -u-|> Request
+    
+    Request "1,1" -r- "0,*" CollectionOfData
+    
+    Dataset  --|> CollectionOfData
+    Datapoint  -l-|> CollectionOfData
+    Entity  -u-|> CollectionOfData
+    Conception  -d-|> CollectionOfData
+  
+@enduml
