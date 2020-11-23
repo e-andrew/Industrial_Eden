@@ -1,0 +1,63 @@
+@startuml
+
+entity Account
+entity Account.email
+entity Account.password
+entity Account.confirmation
+entity Account.permissions
+entity Account.nickname
+entity verificationRequest
+ Account.email --* Account
+ Account.password --* Account
+ Account.confirmation --* Account
+ Account.permissions --* Account
+ Account.nickname --* Account
+ verificationRequest "1,*" -l- "1,1" Account
+
+entity Review
+entity Review.creationdate
+entity Review.text
+entity Review.topic
+ Review.creationdate -u-* Review
+ Review.text --* Review
+ Review.topic -d-* Review
+
+entity User
+entity Guest
+entity Moderator
+entity Admin
+entity WorkStatistics
+ Guest -u-|> User
+ Moderator -u-|> User
+ Admin -u-|> User
+ WorkStatistics "1,1" -u- "1,1" Admin : Viewer
+
+entity DDF
+entity DDF.name
+entity Dataset
+entity Datapoint
+entity Entity
+entity Conception
+ 
+ Dataset  --|> DDF
+ Datapoint  -l-|> DDF
+ Entity  -u-|> DDF
+ Conception  -d-|> DDF
+ DDF.name -u-* DDF
+
+entity Request
+entity DeleteRequest
+entity CreateRequest
+entity ReadRequest
+entity UpdateRequest
+ DeleteRequest --|> Request
+ CreateRequest --|> Request
+ ReadRequest -u-|> Request
+ UpdateRequest -u-|> Request
+
+ User "0,*" -u- "1,1" Account : Owner
+ User "1,1" -r- "0,*" Request
+ Request "1,1" -r- "0,*" DDF
+ User "1,1" -l- "0,*" Review : Author
+
+@enduml
