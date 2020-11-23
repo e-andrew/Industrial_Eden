@@ -32,18 +32,24 @@ entity WorkStatistics
  Admin -u-|> User
  WorkStatistics "1,1" -u- "1,1" Admin : Viewer
 
-entity DDF
-entity DDF.name
+entity CollectionOfData
+entity CollectionOfData.name
+entity CollectionOfData.description
+entity CollectionOfData.creationdate
+entity CollectionOfData.modificationdate
 entity Dataset
 entity Datapoint
 entity Entity
 entity Conception
  
- Dataset  --|> DDF
- Datapoint  -l-|> DDF
- Entity  -u-|> DDF
- Conception  -d-|> DDF
- DDF.name -u-* DDF
+ Dataset  --|> CollectionOfData
+ Datapoint  -l-|> CollectionOfData
+ Entity  -u-|> CollectionOfData
+ Conception  -d-|> CollectionOfData
+ CollectionOfData.name -u-* CollectionOfData
+ CollectionOfData.description -u-* CollectionOfData
+ CollectionOfData.creationdate -u-* CollectionOfData
+ CollectionOfData.modificationdate -u-* CollectionOfData
 
 entity Request
 entity DeleteRequest
@@ -57,7 +63,7 @@ entity UpdateRequest
 
  User "0,*" -u- "1,1" Account : Owner
  User "1,1" -r- "0,*" Request
- Request "1,1" -r- "0,*" DDF
+ Request "1,1" -r- "0,*" CollectionOfData
  User "1,1" -l- "0,*" Review : Author
 
 @enduml
