@@ -10,4 +10,4 @@
 
 ## Реляційна схема
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/src/uml/Relation-model.PNG" height="400" width="800" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/src/uml/Relation-model.PNG"></a>
