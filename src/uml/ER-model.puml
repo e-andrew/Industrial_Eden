@@ -1,11 +1,12 @@
 @startuml
 
-  entity Account <<ENTITY>> {
+  entity User <<ENTITY>> {
     email:TEXT
     nickname:TEXT
     password:TEXT
     confirmation:BOOLEAN
-    permissions:ENUM
+    
+    activationKey: GUID <<Nullable>>
   }
   
   entity Review <<ENTITY>>{
@@ -13,82 +14,66 @@
     text:TEXT
     creationdate:DATE
   }
-  
-  entity User <<ENTITY>>{
+ 
+  entity Role <<ENTITY>>{
+    name
+    permissions:ENUM
   }
   
-  entity Admin <<ENTITY>>{
-  }
   
-  entity WorkStatistics <<ENTITY>>{
+  
+  
+  entity Action <<ENTITY>> {
+    type: TEXT
+    actedAt : Date
   }
 
-  entity Guest <<ENTITY>> {
-  }
   
-  entity Moderator <<ENTITY>> {
-  }
-  
-  entity Guest <<ENTITY>> {
-  }
-  
-  entity Request <<ENTITY>> {
-  }
-
-  entity DeleteRequest <<ENTITY>> {
-  }
-  
-  entity CreateRequest <<ENTITY>> {
-  }
-  
-  entity ReadRequest <<ENTITY>> {
-  }
-  
-  entity UpdateRequest <<ENTITY>> {
-  }
-  
-  entity CollectionOfData <<ENTITY>> {
-      name:TEXT
-      description:TEXT
-      creationdate:DATE
-      modificationdate:DATE
-  }
   
   entity Dataset <<ENTITY>> {
   }
+  
+  entity Metadata <<ENTITY>> {
+    key
+    value
+  }
+  
   
   entity Conception <<ENTITY>> {
   }
   
   entity Datapoint <<ENTITY>> {
+    tableName // ref to data table
   }
   
-  entity Entity <<ENTITY>> {
+  entity Entities <<ENTITY>> {
+    tableName // ref to data table
   }
-   
-  Guest -u-|> User
-    Moderator -u-|> User
-    
-    Admin -u-|> User
-    WorkStatistics "1,1" -u- "1,1" Admin : Viewer
+  
+   Metadata "0,*" -u- "1,1" Dataset
     
     User "1,1" -l- "0,*" Review : Author
 
-  User "0,*" -u- "1,1" Account : Owner
-  verificationRequest "1,*" -l- "1,1" Account
- 
-    User "1,1" -r- "0,*" Request
+  
+    User "1,1" -r- "0,*" Action
+    
+    User "0,*" --  "1,1" Role
         
-    DeleteRequest --|> Request
-    CreateRequest --|> Request
-    ReadRequest -u-|> Request
-    UpdateRequest -u-|> Request
     
-    Request "1,1" -r- "0,*" CollectionOfData
+    Action "0,*" -r- "0,1" Metadata
+    Action "0,*" -r- "0,1" Dataset
+    Action "0,*" -- "0,1" Entities
+    Action "0,*" -- "0,1" Conception
     
-    Dataset  --|> CollectionOfData
-    Datapoint  -l-|> CollectionOfData
-    Entity  -u-|> CollectionOfData
-    Conception  -d-|> CollectionOfData
+    
+    Dataset "1,1" -- "0,*" Datapoint
+    
+    Datapoint "0,*" -u- "1,1" Entities
+    
+    Datapoint "1,1" -l- "0,*" Conception
+    
+    Dataset "1,1" -- "0,*" Conception
+    
+    
   
 @enduml
