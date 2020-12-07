@@ -1,69 +1,65 @@
 @startuml
 
-entity Account
-entity Account.email
-entity Account.password
-entity Account.confirmation
-entity Account.permissions
-entity Account.nickname
-entity verificationRequest
- Account.email --* Account
- Account.password --* Account
- Account.confirmation --* Account
- Account.permissions --* Account
- Account.nickname --* Account
- verificationRequest "1,*" -l- "1,1" Account
+entity User
+entity User.email
+entity User.password
+entity User.confirmation
+entity User.nickname
+entity User.activationKey
 
+ User.email -d-* User
+ User.password -d-* User
+ User.confirmation -d-* User
+ User.nickname -d-* User
+ User.activationKey -d-* User
+
+entity Role
+entity Role.name
+entity Role.permissions
+
+ Role.name -u-* Role
+ Role.permissions -u-* Role
+ 
 entity Review
 entity Review.creationdate
 entity Review.text
 entity Review.topic
  Review.creationdate -u-* Review
- Review.text -r-* Review
- Review.topic -d-* Review
+ Review.text -d-* Review
+ Review.topic -r-* Review
 
-entity User
-entity Guest
-entity Moderator
-entity Admin
-entity WorkStatistics
- Guest -u-|> User
- Moderator -u-|> User
- Admin -u-|> User
- WorkStatistics "1,1" -u- "1,1" Admin : Viewer
+entity Action
+entity Action.type
+entity Action.actedAt
 
-entity CollectionOfData
-entity COD.name
-entity COD.description
-entity COD.creationdate
-entity COD.modificationdate
+ Action.type --* Action
+ Action.actedAt --* Action
+
 entity Dataset
 entity Datapoint
-entity Entity
+entity Datapoint.tableName
+ Datapoint.tableName -u-* Datapoint
+entity Entities
+entity Entities.tableName
+ Entities.tableName -r-* Entities
 entity Conception
- 
- Dataset  -u-|> CollectionOfData
- Datapoint  -u-|> CollectionOfData
- Entity  -u-|> CollectionOfData
- Conception  -u-|> CollectionOfData
- COD.name -d-* CollectionOfData
- COD.description -d-* CollectionOfData
- COD.creationdate -d-* CollectionOfData
- COD.modificationdate -d-* CollectionOfData
+entity Metadata
+entity Metadata.key
+entity Metadata.value
 
-entity Request
-entity DeleteRequest
-entity CreateRequest
-entity ReadRequest
-entity UpdateRequest
- DeleteRequest --|> Request
- CreateRequest --|> Request
- ReadRequest -u-|> Request
- UpdateRequest -u-|> Request
+ Metadata.key --* Metadata
+ Metadata.value --* Metadata
 
- User "0,*" -u- "1,1" Account : Owner
- User "1,1" -r- "0,*" Request
- Request "1,1" -r- "0,*" CollectionOfData
  User "1,1" -l- "0,*" Review : Author
-
+ User "0,*" -d- "1,1" Role
+ User "1,1" -r- "0,*" Action
+ Action "0,*" -d- "0,1" Dataset
+ Action "0,*" -d- "0,1" Entities
+ Action "0,*" -d- "0,1" Conception
+ Action "0,*" -r- "0,1" Metadata
+ Entities "1,1" -d- "0,*" Datapoint
+ Datapoint "1,1" -r- "0,*" Conception
+ Datapoint "0,*" -l- "1,1" Dataset
+ Metadata "0,*" -- "1,1" Dataset
+ Conception "0,*" -- "1,1" Dataset
 @enduml
