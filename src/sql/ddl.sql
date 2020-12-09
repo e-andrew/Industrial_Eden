@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`User` (
   `email` VARCHAR(30) NOT NULL,
   `nickname` VARCHAR(20) NOT NULL,
   `password` VARCHAR(20) NOT NULL,
-  `confirmation` TINYINT(2) NULL,
+  `confirmation` TINYINT(2) NOT NULL,
   `activationKey` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`UserID`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
@@ -198,25 +198,26 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-
 -- -----------------------------------------------------
 -- Data for table `Industrial_Eden_DB`.`User`
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Industrial_Eden_DB`;
-INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES ('1', 'finchatticu33@gmail.com', 'dem14n', '123456', '1', 'activated');
-INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES ('2', 'example@gmail.com', 'example', '123456', '1', 'activated2');
+INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES (1, 'example1@gmail.com', 'example1', '11111111', 1, 'activate1');
+INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES (2, 'example2@gmail.com', 'example2', '22222222', 1, 'activate2');
+INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES (3, 'example3@gmail.com', 'example3', '33333333', 1, 'activate3');
 
 COMMIT;
 
 
 -- -----------------------------------------------------
--- Data for table `Industrial_Eden_DB`.`User`
+-- Data for table `Industrial_Eden_DB`.`Review`
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Industrial_Eden_DB`;
-INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES ('1', 'topic1', 'text1', '\'2020-09-01 11:00:09\'', '1');
-INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES ('2', 'topic2', 'text2', '\'2020-11-19 11:45:56\'', '2');
-COMMIT;
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (1, 'topic1', 'text1', '2020-06-25 12:00:00', 1);
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (2, 'topic2', 'text2', '2020-06-25 12:00:12', 2);
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (3, 'topic3', 'text3', '2020-06-25 12:00:24', 3);
 
+COMMIT;
 

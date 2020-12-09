@@ -1,43 +1,44 @@
-const daoConnection = require('../daoConnection');
-const Sequelize = require('sequelize');
-const User = require('./user.js')
+const connection = require('../connection');
+const Sequilize = require('sequelize');
 
-class Review extends Sequelize.Model {}
+const User = require('./user.js');
+
+class Review extends Sequilize.Model {}
 
 Review.init(
     {
-        ReviewID: {
-            type: Sequelize.INTEGER,
-            field: 'ReviewID',
-            primaryKey: true,
-            allowNull: false,
-        },
         topic: {
-            type: Sequelize.STRING,
-            field: 'topic',
-            allowNull: false,
+            type: Sequilize.STRING(45),
+            allowNull: false
         },
         text: {
-            type: Sequelize.STRING,
-            field: 'text',
+            type: Sequilize.STRING(1000),
+            allowNull: false
+        },
+        creationdate: {
+            type: Sequilize.DATE,
             allowNull: false,
         },
-        AuthorID: {
-            type: Sequelize.INTEGER,
-            field: 'AuthorID',
+        author_id: {
+            type: Sequilize.INTEGER,
             allowNull: false,
+            references: {
+                model: User,
+                key: 'UserID'
+            }
         }
     },
     {
-        sequelize: daoConnection,
-        tableName: 'Review'
+        sequelize: connection,
+        freezeTableName: true,
+        modelName: 'review'
     }
 );
 
-User.belongsToMany(Review, {
-    through: 'Review',
-    timestamps: false,
-    foreignKey: 'AuthorID'
+User.hasMany(Review, {
+    foreignKey: 'author_id'
 });
+
+Review.belongsTo(User);
 
 module.exports = Review

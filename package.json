@@ -1,7 +1,7 @@
 {
   "name": "industrial_eden",
   "version": "1.0.0",
-  "description": "A database management system ",
+  "description": "Industrial Eden - це система управління відкритими даними.",
   "main": "index.js",
   "directories": {
     "doc": "docs",
@@ -14,10 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/e-andrew/Industrial_Eden.git"
   },
-  "author": "Alexei Krasnovskiy <finchatticu33@gmail.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/e-andrew/Industrial_Eden/issues"
   },
-  "homepage": "https://github.com/e-andrew/Industrial_Eden#readme"
+  "homepage": "https://github.com/e-andrew/Industrial_Eden#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-table3": "^0.6.0",
+    "lodash-node": "^3.10.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
 }

@@ -1,7 +1,7 @@
 module.exports = {
     database: 'Industrial_Eden_DB',
     username: 'root',
-    password: 'tradeskanciya21',
+    password: '123456789',
     host: 'localhost',
-    dialect: 'mysql',
+    dialect: 'mysql'
 };

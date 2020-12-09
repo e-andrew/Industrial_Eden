@@ -1,47 +1,28 @@
-const daoConnection = require('../daoConnection');
-const Sequelize = require('sequelize');
+const connection = require('../connection');
+const Sequilize = require('sequelize');
 
-class User extends Sequelize.Model {}
+class User extends Sequilize.Model {}
 
 User.init(
     {
-        UserID: {
-            type: Sequelize.INTEGER,
-            field: 'UserID',
-            primaryKey: true,
-            allowNull: false,
-        },
         email: {
-            type: Sequelize.STRING,
-            field: 'email',
+            type: Sequilize.STRING(30),
             allowNull: false,
-            unique: true,
+            unique: true
         },
         nickname: {
-            type: Sequelize.STRING,
-            field: 'nickname',
+            type: Sequilize.STRING(20),
             allowNull: false,
-            unique: true,
+            unique: true
         },
         password: {
-            type: Sequelize.STRING,
-            field: 'password',
+            type: Sequilize.STRING(20),
             allowNull: false,
-        },
-        confirmation: {
-            type: Sequelize.BOOLEAN,
-            field: 'confirmation',
-            allowNull: false,
-        },
-        activationKey: {
-            type: Sequelize.STRING,
-            field: 'activationKey',
-            allowNull: false,
-            unique: true,
+            unique: true
         }
     },
     {
-        sequelize: daoConnection,
+        sequelize: connection,
         modelName: 'user'
     }
 );
