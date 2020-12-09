@@ -197,3 +197,26 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+-- -----------------------------------------------------
+-- Data for table `Industrial_Eden_DB`.`User`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `Industrial_Eden_DB`;
+INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES ('1', 'finchatticu33@gmail.com', 'dem14n', '123456', '1', 'activated');
+INSERT INTO `Industrial_Eden_DB`.`User` (`UserID`, `email`, `nickname`, `password`, `confirmation`, `activationKey`) VALUES ('2', 'example@gmail.com', 'example', '123456', '1', 'activated2');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `Industrial_Eden_DB`.`User`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `Industrial_Eden_DB`;
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES ('1', 'topic1', 'text1', '\'2020-09-01 11:00:09\'', '1');
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES ('2', 'topic2', 'text2', '\'2020-11-19 11:45:56\'', '2');
+COMMIT;
+
+

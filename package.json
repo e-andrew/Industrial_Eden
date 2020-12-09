@@ -1,0 +1,23 @@
+{
+  "name": "industrial_eden",
+  "version": "1.0.0",
+  "description": "A database management system ",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-andrew/Industrial_Eden.git"
+  },
+  "author": "Alexei Krasnovskiy <finchatticu33@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-andrew/Industrial_Eden/issues"
+  },
+  "homepage": "https://github.com/e-andrew/Industrial_Eden#readme"
+}
