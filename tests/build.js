@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const sql = fs.readFileSync(path.join(__dirname, '../src/sql/ddl.sql')).toString();
 
 
-const connection = mysql.connect({
+const connection = mysql.createConnection({
     host: config.host,
     user: config.username,
     password: config.password,
