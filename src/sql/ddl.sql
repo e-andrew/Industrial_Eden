@@ -7,6 +7,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema Industrial_Eden_DB
 -- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `Industrial_Eden_DB` ;
 
 -- -----------------------------------------------------
 -- Schema Industrial_Eden_DB
@@ -17,12 +18,14 @@ USE `Industrial_Eden_DB` ;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`User`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`User` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`User` (
   `UserID` INT NOT NULL,
   `email` VARCHAR(30) NOT NULL,
   `nickname` VARCHAR(20) NOT NULL,
   `password` VARCHAR(20) NOT NULL,
-  `confirmation` TINYINT(2) NOT NULL,
+  `confirmation` TINYINT(1) NOT NULL,
   `activationKey` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`UserID`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
@@ -34,11 +37,13 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Review`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Review` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Review` (
   `ReviewID` INT NOT NULL,
   `topic` VARCHAR(45) NOT NULL,
   `text` VARCHAR(1000) NOT NULL,
-  `creationdate` DATETIME NOT NULL,
+  `creationdate` DATE NOT NULL,
   `AuthorID` INT NOT NULL,
   PRIMARY KEY (`ReviewID`),
   INDEX `fk_Review_User_idx` (`AuthorID` ASC) VISIBLE,
@@ -53,6 +58,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Role`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Role` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Role` (
   `RoleID` INT NOT NULL,
   `name` VARCHAR(20) NOT NULL,
@@ -70,6 +77,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Datasets`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Datasets` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Datasets` (
   `DatasetID` INT NOT NULL,
   `datasetTableName` VARCHAR(45) NOT NULL,
@@ -81,6 +90,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Metadata`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Metadata` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Metadata` (
   `MetadataID` INT NOT NULL,
   `key` VARCHAR(45) NOT NULL,
@@ -100,6 +111,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Entities`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Entities` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Entities` (
   `EntityID` INT NOT NULL,
   `entityTableName` VARCHAR(45) NOT NULL,
@@ -111,6 +124,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Conceptions`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Conceptions` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Conceptions` (
   `ConceptionID` INT NOT NULL,
   `conceptioTableName` VARCHAR(45) NOT NULL,
@@ -129,6 +144,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Datapoints`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Datapoints` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Datapoints` (
   `DatapointID` INT NOT NULL,
   `datapointTableName` VARCHAR(45) NOT NULL,
@@ -152,6 +169,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Industrial_Eden_DB`.`Action`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `Industrial_Eden_DB`.`Action` ;
+
 CREATE TABLE IF NOT EXISTS `Industrial_Eden_DB`.`Action` (
   `ActionID` INT NOT NULL,
   `type` VARCHAR(30) NOT NULL,
@@ -215,9 +234,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Industrial_Eden_DB`;
-INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (1, 'topic1', 'text1', '2020-06-25 12:00:00', 1);
-INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (2, 'topic2', 'text2', '2020-06-25 12:00:12', 2);
-INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (3, 'topic3', 'text3', '2020-06-25 12:00:24', 3);
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (1, 'topic1', 'text1', '2020-06-25', 1);
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (2, 'topic2', 'text2', '2020-06-25', 2);
+INSERT INTO `Industrial_Eden_DB`.`Review` (`ReviewID`, `topic`, `text`, `creationdate`, `AuthorID`) VALUES (3, 'topic3', 'text3', '2020-06-25', 3);
 
 COMMIT;
 

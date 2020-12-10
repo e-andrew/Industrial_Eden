@@ -1,4 +1,5 @@
-const models = require('../src/js/models')
+const User = require("../src/js/models/user")
+const Review = require("../src/js/models/review")
 const Table = require("cli-table3")
 const _ = require("lodash-node")
 const chalk = require("chalk")
@@ -19,8 +20,9 @@ const toTable =  (data, ...fields) => {
 }
 
 
-models.User.findAll()
-    .then(usersList => {
+User.findAll({
+    attributes: ["nickname", "email", "password"]
+}).then(usersList => {
         console.log(chalk.green(`
 Users list`));
         // console.log( usersList.map(user => userMapper(user.id, user.email, user.nickname)).join("\n"));
@@ -28,12 +30,14 @@ Users list`));
     })
 
 
-models.Review.findAll()
+Review.findAll({
+     attributes: ["topic", "text"]
+})
     .then(reviewsList => {
     console.log(chalk.green(`
 Reviews List`));
     // console.log(projectsList.map(projectMapper).join("\n"))
-    console.log(toTable(reviewsList, "topic", "creationdate"))
+    console.log(toTable(reviewsList, "topic", "text"))
 })    
 
 // models.Review.findAll({

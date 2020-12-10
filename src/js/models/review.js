@@ -15,10 +15,6 @@ Review.init(
             type: Sequilize.STRING(1000),
             allowNull: false
         },
-        creationdate: {
-            type: Sequilize.DATE,
-            allowNull: false,
-        },
         author_id: {
             type: Sequilize.INTEGER,
             allowNull: false,
@@ -31,7 +27,7 @@ Review.init(
     {
         sequelize: connection,
         freezeTableName: true,
-        modelName: 'review'
+        modelName: 'Review'
     }
 );
 
