@@ -7,6 +7,10 @@ class Review extends Sequilize.Model {}
 
 Review.init(
     {
+        ReviewID: {
+            type: Sequilize.INTEGER,
+            primaryKey: true
+        },
         topic: {
             type: Sequilize.STRING(45),
             allowNull: false
@@ -15,13 +19,9 @@ Review.init(
             type: Sequilize.STRING(1000),
             allowNull: false
         },
-        author_id: {
+        AuthorID: {
             type: Sequilize.INTEGER,
             allowNull: false,
-            references: {
-                model: User,
-                key: 'UserID'
-            }
         }
     },
     {
@@ -31,10 +31,10 @@ Review.init(
     }
 );
 
-User.hasMany(Review, {
-    foreignKey: 'author_id'
-});
+User.hasMany(Review);
 
-Review.belongsTo(User);
+Review.belongsTo(User, {
+    foreignKey: 'AuthorID'
+});
 
 module.exports = Review

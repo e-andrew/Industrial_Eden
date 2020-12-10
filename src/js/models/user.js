@@ -5,6 +5,10 @@ class User extends Sequilize.Model {}
 
 User.init(
     {
+        UserID: {
+            type: Sequilize.INTEGER,
+            primaryKey: true
+        },
         email: {
             type: Sequilize.STRING(30),
             allowNull: false,

@@ -1,22 +1,21 @@
-const config = require('../config/db');
+const db = require('../config/db');
 const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql2');
 const chalk = require('chalk');
 
-const sql = fs.readFileSync(path.join(__dirname, '../src/sql/ddl.sql')).toString();
+const sql_script = fs.readFileSync(path.join(__dirname, '../src/sql/ddl.sql')).toString();
 
-
-const connection = mysql.createConnection({
-    host: config.host,
-    user: config.username,
-    password: config.password,
-    database: config.database,
-    multipleStatements: true
+const connection_to_db = mysql.connect({
+    host: db.host,
+    user: db.username,
+    password: db.password,
+    database: db.database,
+    multipleStatements: true,
 });
 
-connection.query(sql, function (error) {
-    if (error) throw error;
-});
+connection_to_db.query(sql_script, (err, res) => {console.log(err, res);
+  connection_to_db.end();})
+
 
 process.exit(0);

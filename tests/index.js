@@ -25,38 +25,27 @@ User.findAll({
 }).then(usersList => {
         console.log(chalk.green(`
 Users list`));
-        // console.log( usersList.map(user => userMapper(user.id, user.email, user.nickname)).join("\n"));
         console.log(toTable(usersList, "nickname", "email", "password"))
     })
 
 
 Review.findAll({
-     attributes: ["topic", "text"]
+     attributes: ["topic", "text", "AuthorID"]
 })
     .then(reviewsList => {
     console.log(chalk.green(`
 Reviews List`));
-    // console.log(projectsList.map(projectMapper).join("\n"))
-    console.log(toTable(reviewsList, "topic", "text"))
+    console.log(toTable(reviewsList, "topic", "text", "AuthorID"))
 })    
 
-// models.Review.findAll({
-//         include: [{
-//             model: models.User,
-//             through: {
-//                 attributes: ['author_id']
-//             }
-//         }]
-//     })
-//     .then( reviews => {
-//         console.log(chalk.green(`
-// Review Authors List`));
-// //         console.log(projects.map( project => `${project.name} (#${project.id})
-// // ${project.users.map(user => userMapper(user.id, user.name, user.project_user.dataValues.role)).join("\n")}
-// // `).join("\n"))
-    
-//         console.log(reviews.map( review => `Review: ${review.topic} (#${review.creationdate})
-// ${toTable(review.users,"id","name", "project_user.dataValues.role")}
-// `).join("\n"))
-
-//     })
+Review.findAll({
+        attributes: ["topic", "text", "AuthorID"],
+        include: [{
+            model: User,
+            attributes: ["nickname", "email"]
+        }]
+    })
+    .then( reviews => {
+        console.log(chalk.green(`
+Review Authors List`));
+        console.log(toTable(reviews,"topic", "text", "AuthorID", 'User.nickname', 'User.email'))})
